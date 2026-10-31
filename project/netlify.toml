@@ -1,0 +1,36 @@
+[build]
+  publish = "website"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/enquiries"
+  to = "/.netlify/functions/enquiries"
+  status = 200
+
+[[redirects]]
+  from = "/api/desk-sync"
+  to = "/.netlify/functions/desk-sync"
+  status = 200
+
+[[redirects]]
+  from = "/api/properties"
+  to = "/.netlify/functions/properties"
+  status = 200
+
+[[redirects]]
+  from = "/api/channel-manager"
+  to = "/.netlify/functions/channel-manager"
+  status = 200
+
+[[redirects]]
+  from = "/api/ota-calendar"
+  to = "/.netlify/functions/ota-calendar"
+  status = 200
+
+[[redirects]]
+  from = "/api/booking-manager"
+  to = "/.netlify/functions/booking-manager"
+  status = 200
